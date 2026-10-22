@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kroner – Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="top"><div><h1>💰 Kroner</h1><p class="sub">Track spending, stay under your monthly budget.</p></div>
+  <button class="ghost" id="reset">Reset data</button></div>
+
+  <div class="grid">
+    <div class="card"><div class="lbl">Balance</div><div class="big" id="bal">0 kr</div></div>
+    <div class="card"><div class="lbl">Income</div><div class="big good" id="inc">0 kr</div></div>
+    <div class="card"><div class="lbl">Expenses</div><div class="big bad" id="exp">0 kr</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Monthly budget (this month)</h2>
+    <div class="bar"><i id="bfill" style="width:0%"></i></div>
+    <p class="sub" id="btext" style="margin:8px 0 0">No budget set.</p>
+    <div class="bud"><input id="bin" type="number" min="0" placeholder="Budget in kr, e.g. 8000"><button id="bset">Set</button></div>
+  </div>
+
+  <div class="card">
+    <h2>Add transaction</h2>
+    <form id="f">
+      <select id="type"><option value="expense">Expense</option><option value="income">Income</option></select>
+      <input id="amt" type="number" min="0.01" step="0.01" placeholder="Amount (kr)" required>
+      <select id="cat"></select>
+      <input id="date" type="date" required>
+      <input id="note" class="full" placeholder="Note (optional)" maxlength="60">
+      <button class="full" type="submit">Add</button>
+    </form>
+  </div>
+
+  <div class="card"><h2>Spending by category</h2><div id="cats"></div></div>
+
+  <div class="card">
+    <h2>Transactions</h2>
+    <select id="filter" style="width:100%;margin-bottom:8px"><option value="all">All time</option><option value="month">This month</option></select>
+    <div id="list"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
