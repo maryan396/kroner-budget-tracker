@@ -20,9 +20,34 @@ No install needed. Open `index.html` in a browser.
 - `script.js` – app logic
 
 ## How I used AI
-_Describe your prompts, what the AI generated, and what you changed yourself._
+
+**Tool:** Claude , free chat interface.
+
+### 1. Brainstorming and planning
+I gave Claude my idea choice, the personal finance tracker because
+managing money as a student is an everyday problem I can relate to.
+
+### 2. Generating the first version
+Claude generated a working prototype as a single HTML file. It included:
+- adding and deleting income and expense transactions
+- balance, income and expense totals
+- a monthly budget with a progress bar that turns orange and red
+- a spending breakdown by category
+- saving data in the browser with localStorage
+- light/dark mode and a mobile-friendly layout
+
+### 3. My own changes
+- _i noticed some bug, calculations were wrong sometimes, so i fixed it.
+- Added color to create contrast
+
+### What I learned
+- Describing the problem clearly gets better results than asking for code directly.
+- AI-generated code needs testing; I checked each feature myself in the browser
+  (see the Testing section).
+- Splitting code into separate files makes it easier to understand and edit.
 
 ## Testing
+- Tested the folliwing:
 -added and deleted transactions
 - budget limit
 - checked empty input
