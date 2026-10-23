@@ -1,3 +1,4 @@
+
 # 💰 Kroner – Budget Tracker
 
 A simple personal finance tracker for students, built with AI-assisted ("vibe") coding.
@@ -22,7 +23,10 @@ No install needed. Open `index.html` in a browser.
 _Describe your prompts, what the AI generated, and what you changed yourself._
 
 ## Testing
-_List what you tested (add/delete, budget limit, refresh persistence, empty input) and any bugs you fixed._
+-added and deleted transactions
+- budget limit
+- checked empty input
+- fixed bugs like numerical errors.
 
 ## Ideas for improvement
 - CSV export
