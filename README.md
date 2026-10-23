@@ -1,7 +1,7 @@
 
 # 💰 Kroner – Budget Tracker
-
-A simple personal finance tracker for students, built with AI-assisted ("vibe") coding.
+# Description
+Kroner is a simple personal finance tracker for students. It lets you log income and expenses, set a monthly budget, and see where your money goes by category. A progress bar warns you when you're close to or over budget, and you can export your transactions to CSV. I built with AI-assisted ("vibe") coding.
 
 ## Features
 - Log income and expenses (amount, category, date, note)
